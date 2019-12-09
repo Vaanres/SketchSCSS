@@ -1,0 +1,255 @@
+/**
+ * Calculate the luminance for a color.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+* Calculate the contrast ratio between two colors.
+* See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+*/
+/**
+* Determine whether to use dark or light text on top of given color.
+* Returns black for dark text and white for light text.
+*/
+.H1 .Dark .Normal .left {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: left;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.96);
+}
+.H1 .Dark .Normal .right {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: right;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.96);
+}
+.H1 .Dark .Normal .center {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.96);
+}
+.H1 .Dark .Low .left {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: left;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+}
+.H1 .Dark .Low .right {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: right;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+}
+.H1 .Dark .Low .center {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+}
+.H1 .Dark .Disabled .left {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: left;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.38);
+}
+.H1 .Dark .Disabled .right {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: right;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.38);
+}
+.H1 .Dark .Disabled .center {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.38);
+}
+.H1 .Light .Normal .left {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: left;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.96);
+}
+.H1 .Light .Normal .right {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: right;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.96);
+}
+.H1 .Light .Normal .center {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.96);
+}
+.H1 .Light .Low .left {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: left;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+}
+.H1 .Light .Low .right {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: right;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+}
+.H1 .Light .Low .center {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+}
+.H1 .Light .Disabled .left {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: left;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.38);
+}
+.H1 .Light .Disabled .right {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: right;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.38);
+}
+.H1 .Light .Disabled .center {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.38);
+}
+.H1 .Primary .Normal .left {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: left;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 122, 255, 0.96);
+}
+.H1 .Primary .Normal .right {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: right;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 122, 255, 0.96);
+}
+.H1 .Primary .Normal .center {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 122, 255, 0.96);
+}
+.H1 .Primary .Low .left {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: left;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 122, 255, 0.6);
+}
+.H1 .Primary .Low .right {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: right;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 122, 255, 0.6);
+}
+.H1 .Primary .Low .center {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 122, 255, 0.6);
+}
+.H1 .Primary .Disabled .left {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: left;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 122, 255, 0.38);
+}
+.H1 .Primary .Disabled .right {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: right;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 122, 255, 0.38);
+}
+.H1 .Primary .Disabled .center {
+  vertical-align: middle;
+  font-size: 121.504px;
+  font-family: "Open Sans";
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 122, 255, 0.38);
+}

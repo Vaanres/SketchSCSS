@@ -1,0 +1,56 @@
+@use "sass:map"; // access values in arrays
+@use "sass:color"; // color manipulation
+
+// Base colors
+$baseColors: (
+  Blue: #007aff,
+  Green: #34c859,
+  Indigo: #5857d6,
+  Orange: #ff9600,
+  Pink: #ff2e55,
+  Purple: #af52de,
+  Red: #ff3c30,
+  Teal: #5ac8fa,
+  Yellow: #ffcc01
+);
+
+$colors: (
+  Primary: map.get($baseColors, Blue),
+  Secondary: map.get($baseColors, Indigo),
+  Danger: map.get($baseColors, Red),
+  Warning: map.get($baseColors, Orange),
+  Success: map.get($baseColors, Green),
+  Dark: black,
+  Light: white
+);
+
+// Font
+$font-family: "Open Sans";
+$headings-font-family: "Open Sans";
+$headings-font-weight: bold;
+$headings-line-height: 1.2;
+$font-weight: bold;
+$line-height: 1.5;
+
+$font-size-base: 16px;
+$text-align: left, right, center;
+
+$headings-font-sizes: (
+  H1: $font-size-base * 7.594 // H2: $font-size-base * 5.063,
+    // H3: $font-size-base * 3.375,
+    // H4: $font-size-base * 2.25,
+    // H5: $font-size-base * 1.5,
+    // H6: $font-size-base * 1
+);
+
+$font-sizes: (
+  Normal: $font-size-base,
+  Small: $font-size-base * 0.8,
+  Tiny: $font-size-base * 0.6
+);
+
+$font-opacities: (
+  Normal: 0.96,
+  Low: 0.6,
+  Disabled: 0.38
+);

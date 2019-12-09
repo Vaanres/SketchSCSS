@@ -1,0 +1,22 @@
+// Required SASS modules:
+@use "sass:map"; // access values in arrays
+@use "sass:color"; // color manipulation
+@use 'functions' as *;
+@use 'variables' as *;
+
+.Backgrounds {
+  // base color styles generation
+  @each $key, $value in $colors {
+    .#{$key} {
+      background-color: $value;
+    }
+  }
+
+  .Neutrals {
+    @for $index from 1 through 7 {
+      .Neutral-#{$index} {
+        background-color: tint(map.get($colors, Black), 45% + ($index) * 50%/7);
+      }
+    }
+  }
+}

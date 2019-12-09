@@ -1,0 +1,44 @@
+// Required SASS modules:
+@use "sass:map"; // access values in arrays
+@use "sass:color"; // color manipulation
+@use 'functions' as *;
+@use 'variables' as *;
+
+$headings-colors: (
+  Dark: map.get($colors, Dark),
+  Light: map.get($colors, Light),
+  Primary: map.get($colors, Primary)
+);
+
+@mixin generateFont() {
+}
+
+// Headings
+@each $headings-font-size-name,
+  $headings-font-size-value in $headings-font-sizes
+{
+  .#{$headings-font-size-name} {
+    @each $heading-color-name, $heading-color-value in $headings-colors {
+      .#{$heading-color-name} {
+        @each $font-opacity-name, $font-opacity-value in $font-opacities {
+          .#{$font-opacity-name} {
+            @each $text-align-value in $text-align {
+              .#{$text-align-value} {
+                vertical-align: middle;
+                font-size: $headings-font-size-value;
+                font-family: $headings-font-family;
+                text-align: $text-align-value;
+                line-height: $headings-line-height;
+                font-weight: $headings-font-weight;
+                color: transparentize(
+                  $color: $heading-color-value,
+                  $amount: 1 - $font-opacity-value
+                );
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
