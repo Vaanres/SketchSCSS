@@ -1,0 +1,21 @@
+@use "sass:map"; // access values in arrays
+@use "sass:color"; // color manipulation
+@use 'variables' as *;
+
+.Shadows {
+  @each $key, $value in $shadows {
+    .Outer {
+      .#{$key} {
+        background-color: map.get($colors, White);
+        box-shadow: $value;
+      }
+    }
+
+    .Inner {
+      .#{$key} {
+        background-color: map.get($colors, White);
+        box-shadow: inset $value;
+      }
+    }
+  }
+}

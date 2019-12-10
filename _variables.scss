@@ -59,3 +59,17 @@ $font-opacities: (
   Low: 0.6,
   Disabled: 0.38
 );
+
+$shadow-module: 4px;
+
+// Shadows
+$shadows: (
+  enormous: 0 $shadow-module * 8 $shadow-module * 32
+    fade-out(map.get($colors, Dark), 0.7),
+  large: 0 $shadow-module * 4 $shadow-module * 8
+    fade-out(map.get($colors, Dark), 0.8),
+  medium: 0 $shadow-module $shadow-module * 2
+    fade-out(map.get($colors, Dark), 0.9),
+  small: 0 $shadow-module/2 $shadow-module/4
+    fade-out(map.get($colors, Dark), 0.95)
+);
