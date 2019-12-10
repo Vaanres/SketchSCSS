@@ -1,6 +1,7 @@
 // Required SASS modules:
 @use "sass:map"; // access values in arrays
 @use "sass:color"; // color manipulation
+
 @use 'functions' as *;
 @use 'variables' as *;
 
@@ -22,8 +23,8 @@ $headings-colors: (
       .#{$heading-color-name} {
         @each $font-opacity-name, $font-opacity-value in $font-opacities {
           .#{$font-opacity-name} {
-            @each $text-align-value in $text-align {
-              .#{$text-align-value} {
+            @each $text-align-name, $text-align-value in $text-align {
+              .#{$text-align-name} {
                 vertical-align: middle;
                 font-size: $headings-font-size-value;
                 font-family: $headings-font-family;

@@ -1,4 +1,5 @@
 //// Custom functions to get parity with Less functions
+@use 'constants' as *;
 
 @function tint($color, $value) {
   @return mix(#ffffff, $color, $value);

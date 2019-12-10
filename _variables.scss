@@ -33,7 +33,12 @@ $font-weight: bold;
 $line-height: 1.5;
 
 $font-size-base: 16px;
-$text-align: left, right, center;
+
+$text-align: (
+  Left: left,
+  Center: center,
+  Right: right
+);
 
 $headings-font-sizes: (
   H1: $font-size-base * 7.594 // H2: $font-size-base * 5.063,

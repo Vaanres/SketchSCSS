@@ -5,17 +5,29 @@
 @use 'variables' as *;
 
 .Backgrounds {
-  // base color styles generation
-  @each $key, $value in $colors {
-    .#{$key} {
-      background-color: $value;
+  .Solids {
+    // base color styles generation
+    @each $key, $value in $colors {
+      .#{$key} {
+        background-color: $value;
+      }
+    }
+  }
+
+  .Gradients {
+    .Gradient-Primary {
+      background-color: linear-gradient(
+        45deg,
+        map.get($colors, Primary),
+        map.get($colors, Secondary)
+      );
     }
   }
 
   .Neutrals {
     @for $index from 1 through 7 {
       .Neutral-#{$index} {
-        background-color: tint(map.get($colors, Black), 45% + ($index) * 50%/7);
+        background-color: tint(map.get($colors, Dark), 45% + ($index) * 50%/7);
       }
     }
   }
